@@ -32,9 +32,9 @@ namespace Tests
             var data = new string[] { "a", "b", "a", "b", "a" };
             var commonSequences = StringSequences.FindCommonSequences(data);
             
-            Assert.Equal(commonSequences.Count, 2);
-            Assert.Equal(commonSequences["a b a"], 2);
-            Assert.Equal(commonSequences["b a b"], 1);   
+            Assert.Equal(2, commonSequences.Count);
+            Assert.Equal(2, commonSequences["a b a"]);
+            Assert.Equal(1, commonSequences["b a b"]);   
         }
     }
 }
