@@ -50,3 +50,17 @@ Logs / error handling
 ```
 269 ms moby dick
 ````
+
+## Bonus Docker
+
+to run locally, pull in from docker public repo
+ ```
+docker run -it --rm aidanhl/word-sequence-finder
+docker run -it --rm aidanhl/word-sequence-finder "/moby-dick.txt"
+docker run -it --rm word-sequence-finder "/brothers-karamazov.txt"
+docker run -it --rm word-sequence-finder "/brothers-karamazov.txt" "/moby-dick.txt"
+```
+
+to build ` docker build -t aidanhl/word-sequence-finder -f Dockerfile .`
+### What this does
+This is a basic docker app, we just mount the two text sample documents inside the docker container, and default to running moby-dick. We allow the user to specify "/brothers-karamazov.txt" or both if desired. This can be improved by allowing users to mount and use a text file of their choice, or pipe in user input to stdin of the application.

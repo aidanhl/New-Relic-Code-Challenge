@@ -1,5 +1,5 @@
 using Xunit;
-using New_Relic_Code_Challenge;
+using Word_Sequence_Finder;
 using System.Collections.Generic;
 
 namespace Tests

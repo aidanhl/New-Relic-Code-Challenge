@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace New_Relic_Code_Challenge
+namespace Word_Sequence_Finder
 {
     public class StringSequences
     {
