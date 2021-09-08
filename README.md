@@ -1,7 +1,7 @@
 # Word Sequence Finder
 
 ## Description
-This app reads text, and prints out 100 most common words in descending order.
+This is a dotnet 5.0 console app that reads text, and prints out 100 most common words in descending order. This text can be passed to the application as a file parameter (or multiple), or via stdin. 
 
 ## How to run
 [Install dotnet 5.0, click here!](https://dotnet.microsoft.com/download)
@@ -20,13 +20,8 @@ dotnet test
 
 to run:
 ```
-dotnet run .\texts\moby-dick.txt .\texts\brothers-karamazov.txt
-```
-
-or use executable:
-```
-cat .\texts\moby-dick.txt | .\bin\Debug\net5.0\New-Relic-Code-Challenge.exe
-.\bin\Debug\net5.0\New-Relic-Code-Challenge.exe .\texts\moby-dick.txt
+dotnet run ./texts/moby-dick.txt ./texts/brothers-karamazov.txt
+cat ./texts/moby-dick.txt  | dotnet run
 ```
 
 ## How this works
@@ -40,6 +35,8 @@ We could break input text into multiple chunks, and process all those chunks int
 
 Add more tests
 
+Logs / error handling
+
 ## Execution Time
 
 ### Passing in file name:
@@ -49,7 +46,7 @@ Add more tests
 90 ms bros
 208 ms both
 ```
-stdin:
+### stdin:
 ```
 269 ms moby dick
 ````
