@@ -39,9 +39,6 @@ namespace New_Relic_Code_Challenge
                     
                     PrintStringSequences(sb.ToString());
                 } else {
-                    // var text = System.IO.File.ReadAllText("C:\\Code\\New-Relic-Code-Challenge\\texts\\moby-dick.txt"); debugging
-                    // PrintStringSequences(text);
-
                     Console.WriteLine("Error, need data");
                     return;
                 }
